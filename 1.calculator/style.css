@@ -54,15 +54,20 @@ button{
     background-color: transparent;
     box-shadow: 2px 3px 4px 5px rgba(0, 153, 255, 0.192);
     font-size: large;
-    color: blueviolet;
+    color: gold;
     cursor: pointer;
 }
 button:hover {
     background-color:#8deef0c3;
+    color: black;
     transition: 0.2s;
 }
 
 button:disabled {
     background-color: #0be4f3;
     cursor: not-allowed;
+}
+.operator{
+    background: linear-gradient(45deg, rgba(0, 0, 255, 0.016),cyan);
+    color: red;
 }
