@@ -55,4 +55,15 @@ button{
     box-shadow: 2px 3px 4px 5px rgba(0, 153, 255, 0.192);
     font-size: large;
     color: blueviolet;
+    cursor: pointer;
+}
+button:hover {
+    background-color:#8deef0c3;
+    transition: 0.2s;
+}
+button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 2px 3px 4px 5px #e4d6f178;
+    transition: 0.2s;
 }
