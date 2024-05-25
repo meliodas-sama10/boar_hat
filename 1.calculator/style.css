@@ -45,7 +45,7 @@ body{
     }
 }
 button{
-    border: none;
+    
     height: 70px;
     width: 70px;
     padding: 2px;
@@ -61,9 +61,8 @@ button:hover {
     background-color:#8deef0c3;
     transition: 0.2s;
 }
-button:focus {
-    outline-color: transparent;
-    outline-style:solid;
-    box-shadow: 2px 3px 4px 5px #e4d6f178;
-    transition: 0.2s;
+
+button:disabled {
+    background-color: #0be4f3;
+    cursor: not-allowed;
 }
