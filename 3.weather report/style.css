@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sevillana&display=swap');
+
+*{
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: normal;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(to top,cyan,yellow);
+    color:crimson;
+}
+body{
+    background :gray;
+    font-size: large;
+}
+.weather-input input{
+    border-radius: 15px;
+    background-color: rgba(244, 135, 135, 0.43);
+    color: black;
+    padding-left: 20px;
+    width: 80%;
+    height: 30px;
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+}
+input::placeholder{
+    font-size: 15px;
+    color: black;
+    
+}
+.container{
+    display: flex;
+    gap: 35px;
+    width: 100%;
+}
+.weather-input{
+    width: 60%;
+    color: azure;
+    background-color: rgba(0, 191, 255, 0.922);
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px ;
+}
+.min-max-temp {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.min-temp{
+    font-size: 25px;
+    color: yellow;
+    margin-right: 10px;
+}
+
+.max-temp{
+    font-size: 25px;
+    color: rgb(185, 1, 1);
+    margin-left: 10px;
+}
+.search-btn{
+    border: 0;
+    outline: 0;
+    background: #ebfffcc1;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.search-btn img{
+    width: 20px;
+}
+.weather{
+    width: 100%;
+}
+.current-weather{
+    color: rgb(31, 6, 113);
+    background-color: rgba(0, 191, 255, 0.922);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.wind-humidity {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.wind{
+    font-size: 25px;
+    color: rgb(31, 6, 113);
+    padding-left: 150px;
+}
+.Humidity{
+    font-size: 25px;
+    color: rgb(31, 6, 113);
+    padding-right: 150px;
+}
