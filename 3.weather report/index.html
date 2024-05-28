@@ -10,27 +10,47 @@
     <h1>Weather Report</h1>
     <div class="container">
         <div class="weather-input">
-            <h2>Enter City Name</h2>
-            <input type="text" placeholder="Eg. Delhi, Patna, Pune..">
-            <button class="search-btn"><img src="search.png" ></button>
+            <div class="search">
+                <h2 style="margin-top: 20px; margin-bottom: 15px;padding-left: 10px;">Enter City Name</h2>
+                <input type="text" placeholder="Eg. Delhi, Patna, Pune..">
+                <button class="search-btn"><img src="search.png" ></button>
+            </div>
         </div>
         <div class="weather">
             <div class="current-weather">
                 <div class="details">
-                    <h2>Delhi (27-05-2024)</h2>
+                    <h2 style="text-align: center;margin-top: 15px; margin-bottom: 20px;">Today's Weather</h2>
+                    <h2 style="padding-left: 15px; margin-top: 10px;">Delhi (27-05-2024)</h2>
                     <h2 style="text-align: center;">Temprature: 38°C</h2>
                     <div class="min-max-temp">
-                        <div class="min-temp">Min: 36°C</div>
-                        <div class="max-temp">Max: 47°C</div>
+                        <div class="min-temp"><img src="min-temp.png" alt="">
+                            <div>
+                                Min: 36°C
+                            </div>
+                        </div>
+                        <div class="max-temp"><img src="max-temp.png" alt="">
+                            <div>
+                                Max: 47°C
+                            </div>
+                        </div>
                     </div>
                     <div class="wind-humidity">
-                        <div class="wind">Wind: 1.54 KpH</div>
-                        <div class="Humidity">Humidity: 19%</div>
+                        <div class="wind"><img src="wind.png" alt="">
+                            <div>Wind: 1.54 KpH</div>
+                        </div>
+                        <div class="wind"><img src="humid.png" alt="">
+                            <div>Humidity: 19%</div>
+                        </div>
                     </div>
                 </div>
-                <div class="icon"><img src="haze.png" alt="">Haze</div>
+                <div class="icon"><img src="haze.png">
+                    <div>
+                        <p>Haze</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="report"></div>
 </body>
 </html>

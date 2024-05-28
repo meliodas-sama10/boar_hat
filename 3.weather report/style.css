@@ -16,54 +16,95 @@ h1{
     color:crimson;
 }
 body{
-    background :gray;
-    font-size: large;
-}
-.weather-input input{
-    border-radius: 15px;
-    background-color: rgba(244, 135, 135, 0.43);
-    color: black;
-    padding-left: 20px;
-    width: 80%;
-    height: 30px;
-    margin: 10px 0 20px 0;
-    font-size: 15px;
-}
-input::placeholder{
-    font-size: 15px;
-    color: black;
-    
+    /* Prevents the background image from repeating */
+    font-size: large; /* Sets the font size to large */
+    color: #ffffff; /* Sets text color to white for better contrast */
+    /* Ensures the body height is 100% of the viewport height */
 }
 .container{
     display: flex;
     gap: 35px;
     width: 100%;
+    position: relative;
+}
+.container::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background-image: url('3d-realistic-soft-pink-clouds.jpg');
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
 .weather-input{
-    width: 60%;
+    width: 90%;
     color: azure;
-    background-color: rgba(0, 191, 255, 0.922);
-    height: 150px;
+    background-color: rgba(0, 191, 255, 0.397);
+    height: 50%;
     border: none;
     border-radius: 10px;
-    padding: 10px ;
+    padding: 30px ;
+    box-shadow: 0px 2px 6px 3px rgb(41, 41, 41);
+}
+.weather-input input{
+    border-radius: 15px;
+    background-color:rgba(129, 255, 203, 0.366);
+    color: black;
+    padding-left: 20px;
+    width: 70%;
+    height: 40px;
+    margin: 10px 0 20px 0;
+    font-size: 25px;
+}
+input::placeholder{
+    font-size: 25px;
+    color: rgba(254, 224, 224, 0.673);
+    
 }
 .min-max-temp {
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
 }
-
+  
 .min-temp{
     font-size: 25px;
-    color: yellow;
+    color: white;
     margin-right: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.min-temp img{
+    width: 15%;
+    margin-bottom: 10px;
 }
 
 .max-temp{
     font-size: 25px;
-    color: rgb(185, 1, 1);
+    color: white;
     margin-left: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.max-temp img{
+    width: 12%;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.search{
+    align-items: end;
 }
 .search-btn{
     border: 0;
@@ -81,11 +122,12 @@ input::placeholder{
     width: 100%;
 }
 .current-weather{
-    color: rgb(31, 6, 113);
-    background-color: rgba(0, 191, 255, 0.922);
+    color:white;
+    background-color: rgba(0, 191, 255, 0.359);
     border: none;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 0px 2px 6px 3px rgb(41, 41, 41);
 }
 .wind-humidity {
     display: flex;
@@ -94,11 +136,31 @@ input::placeholder{
 }
 .wind{
     font-size: 25px;
-    color: rgb(31, 6, 113);
-    padding-left: 150px;
+    color: white;
+    padding-left: 80px;
+    display: flex;
+}
+.wind img{
+    width: 15%;
+    margin-bottom: 10px;
 }
 .Humidity{
     font-size: 25px;
-    color: rgb(31, 6, 113);
-    padding-right: 150px;
+    color: white;
+    padding-right: 80px;
+}
+.Humidity img{
+    width: 15%;
+    margin-bottom: 10px;
+}
+.icon{
+    padding-left: 200px;
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+}
+.icon img{
+    width: 20%;
+    margin-bottom: 10px;
 }
