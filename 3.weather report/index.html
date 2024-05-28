@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Weather Report</h1>
+    <h1 style="padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(to top,cyan,yellow);
+    color:crimson;">Weather Report</h1>
     <div class="container">
         <div class="weather-input">
             <div class="search">
                 <h2 style="margin-top: 20px; margin-bottom: 15px;padding-left: 10px;">Enter City Name</h2>
-                <input type="text" placeholder="Eg. Delhi, Patna, Pune..">
+                <input class="city-input" type="text" placeholder="Eg. Delhi, Patna, Pune..">
                 <button class="search-btn"><img src="search.png" ></button>
             </div>
         </div>
         <div class="weather">
             <div class="current-weather">
                 <div class="details">
-                    <h2 style="text-align: center;margin-top: 15px; margin-bottom: 20px;">Today's Weather</h2>
+                    <h2 style="text-align: center;margin-top: 15px; margin-bottom: 20px;font-size: 40px;">Today's Weather</h2>
                     <h2 style="padding-left: 15px; margin-top: 10px;">Delhi (27-05-2024)</h2>
                     <h2 style="text-align: center;">Temprature: 38°C</h2>
                     <div class="min-max-temp">
@@ -43,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="icon"><img src="haze.png">
+                <div class="icon"><img src="https://openweathermap.org/img/wn/02d@4x.png">
                     <div>
                         <p>Haze</p>
                     </div>
@@ -51,6 +54,46 @@
             </div>
         </div>
     </div>
-    <div class="report"></div>
+    <div class="report">
+        <h1 style="color: black; text-align: center; margin-bottom: 15px;">5-days Forecast</h1>
+        <ul class="weather-card">
+            <li class="card">
+                <h3>(27-05-2024)</h3>
+                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <h3>Temprature: 38°C</h3>
+                <div>Wind: 1.54 KpH</div>
+                <div>Humidity: 19%</div>
+            </li>
+            <li class="card">
+                <h3>(27-05-2024)</h3>
+                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <h3>Temprature: 38°C</h3>
+                <div>Wind: 1.54 KpH</div>
+                <div>Humidity: 19%</div>
+            </li>
+            <li class="card">
+                <h3>(27-05-2024)</h3>
+                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <h3>Temprature: 38°C</h3>
+                <div>Wind: 1.54 KpH</div>
+                <div>Humidity: 19%</div>
+            </li>
+            <li class="card">
+                <h3>(27-05-2024)</h3>
+                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <h3>Temprature: 38°C</h3>
+                <div>Wind: 1.54 KpH</div>
+                <div>Humidity: 19%</div>
+            </li>
+            <li class="card">
+                <h3>(27-05-2024)</h3>
+                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <h3>Temprature: 38°C</h3>
+                <div>Wind: 1.54 KpH</div>
+                <div>Humidity: 19%</div>
+            </li>
+        </ul>
+
+    </div>
 </body>
 </html>
