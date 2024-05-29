@@ -7,93 +7,80 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="padding: 20px 0;
-    text-align: center;
-    background: linear-gradient(to top,cyan,yellow);
-    color:crimson;">Weather Report</h1>
+    <h1 class="heading">Weather Report</h1>
     <div class="container">
         <div class="weather-input">
             <div class="search">
-                <h2 style="margin-top: 20px; margin-bottom: 15px;padding-left: 10px;">Enter City Name</h2>
-                <input class="city-input" type="text" placeholder="Eg. Delhi, Patna, Pune..">
+                <h2 class="city">Enter City Name</h2>
+                <input class="city-input" id="city-input" type="text" placeholder="Eg. Delhi, Patna, Pune..">
                 <button class="search-btn"><img src="search.png" ></button>
             </div>
         </div>
         <div class="weather">
             <div class="current-weather">
                 <div class="details">
-                    <h2 style="text-align: center;margin-top: 15px; margin-bottom: 20px;font-size: 40px;">Today's Weather</h2>
-                    <h2 style="padding-left: 15px; margin-top: 10px;">Delhi (27-05-2024)</h2>
-                    <h2 style="text-align: center;">Temprature: 38°C</h2>
+                    <h2 class="Today">Today's Weather</h2>
+                    <h2 class="cityday">________</h2>
+                    <h2 class="temp">Temprature: ___°C</h2>
                     <div class="min-max-temp">
                         <div class="min-temp"><img src="min-temp.png" alt="">
                             <div>
-                                Min: 36°C
+                                Min: ____°C
                             </div>
                         </div>
-                        <div class="max-temp"><img src="max-temp.png" alt="">
+                        <div class="max-temp" style="text-align: center;"><img src="max-temp.png" alt="">
                             <div>
-                                Max: 47°C
+                                Max: ____°C
                             </div>
                         </div>
                     </div>
                     <div class="wind-humidity">
                         <div class="wind"><img src="wind.png" alt="">
-                            <div>Wind: 1.54 KpH</div>
+                            <div>Wind: ______Kph</div>
                         </div>
-                        <div class="wind"><img src="humid.png" alt="">
-                            <div>Humidity: 19%</div>
+                        <div class="Humidity"><img src="humid.png" alt="">
+                            <div>Humidity:____%</div>
                         </div>
-                    </div>
-                </div>
-                <div class="icon"><img src="https://openweathermap.org/img/wn/02d@4x.png">
-                    <div>
-                        <p>Haze</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="report">
-        <h1 style="color: black; text-align: center; margin-bottom: 15px;">5-days Forecast</h1>
+        <h1 class="forecast">5-days Forecast</h1>
         <ul class="weather-card">
             <li class="card">
-                <h3>(27-05-2024)</h3>
-                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-                <h3>Temprature: 38°C</h3>
-                <div>Wind: 1.54 KpH</div>
-                <div>Humidity: 19%</div>
+                <h3>________</h3>
+                <h3>Temprature:____°C</h3>
+                <div>Wind: ____kph</div>
+                <div>Humidity: ____%</div>
             </li>
             <li class="card">
-                <h3>(27-05-2024)</h3>
-                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-                <h3>Temprature: 38°C</h3>
-                <div>Wind: 1.54 KpH</div>
-                <div>Humidity: 19%</div>
+                <h3>________</h3>
+                <h3>Temprature:____°C</h3>
+                <div>Wind: ____kph</div>
+                <div>Humidity: ____%</div>
             </li>
             <li class="card">
-                <h3>(27-05-2024)</h3>
-                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-                <h3>Temprature: 38°C</h3>
-                <div>Wind: 1.54 KpH</div>
-                <div>Humidity: 19%</div>
+                <h3>________</h3>
+                <h3>Temprature:____°C</h3>
+                <div>Wind: ____kph</div>
+                <div>Humidity: ____%</div>
             </li>
             <li class="card">
-                <h3>(27-05-2024)</h3>
-                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-                <h3>Temprature: 38°C</h3>
-                <div>Wind: 1.54 KpH</div>
-                <div>Humidity: 19%</div>
+                <h3>________</h3>
+                <h3>Temprature:____°C</h3>
+                <div>Wind: ____kph</div>
+                <div>Humidity: ____%</div>
             </li>
             <li class="card">
-                <h3>(27-05-2024)</h3>
-                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-                <h3>Temprature: 38°C</h3>
-                <div>Wind: 1.54 KpH</div>
-                <div>Humidity: 19%</div>
+                <h3>________</h3>
+                <h3>Temprature:____°C</h3>
+                <div>Wind: ____kph</div>
+                <div>Humidity: ____%</div>
             </li>
         </ul>
-
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
