@@ -54,4 +54,4 @@ Each project in this repository is intended to be simple yet informative, helpin
 
 ## Contact
 Rishav Raj- rishavrajr62539@gmail.com
-GitHub Repo: https://github.com/AdityaRaj81/30-Days-30-Projects
+GitHub Repo: https://github.com/meliodas-sama10/boar_hat
