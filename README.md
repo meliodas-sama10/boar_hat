@@ -1,7 +1,7 @@
 # boar_hat
 Hello there!
 
-#This repo is for 30days coding challenge.
+# This repo is for 30days coding challenge.
 I'll try my best to complete it without being fail.
 
 Welcome to the "30 Days, 30 Projects" repository! This repository is a collection of 30 coding projects created over the span of 30 days. Each project is designed to cover a specific concept or technique in web development, utilizing HTML, CSS, and JavaScript. The goal is to provide a practical, hands-on learning experience that helps developers improve their skills through building real-world applications.
